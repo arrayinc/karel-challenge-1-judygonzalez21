@@ -22,3 +22,36 @@ getting at least a little practice in decomposition. In your solution,
 decompose the program so that it includes a function for each step
 shown in the outline.
  */
+
+import "turns";
+
+function GetNewspaper(){
+	findNewspaper();
+	grabNewspaper();
+	returnHome();
+}
+
+function findNewspaper(){
+	repeat (2){
+		move();
+	}
+	turnRight();
+	move();
+	turnLeft();
+	move();
+	
+}		
+
+function grabNewspaper(){
+	pickBeeper();
+	turnAround();
+}
+
+function returnHome(){
+	repeat (3){
+		move();
+	}
+	turnRight();
+	move();
+	turnRight();
+} 
